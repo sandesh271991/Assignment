@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8F2999899F781E3D53F578A /* Pods_Sandesh_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA1BAE3EF2F66BD5F45A483 /* Pods_Sandesh_AssignmentUITests.framework */; };
 		AD08918E22D09759002B6463 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AD08918D22D09759002B6463 /* .gitignore */; };
 		AD08919022D098D9002B6463 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD08918F22D098D9002B6463 /* README.md */; };
 		AD9D558922CFA4BB002FE8FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D558822CFA4BB002FE8FE /* AppDelegate.swift */; };
@@ -21,6 +22,8 @@
 		AD9D55C722D080DD002FE8FE /* CountryInfoVC-Extension+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D55C622D080DD002FE8FE /* CountryInfoVC-Extension+TableViewDelegate.swift */; };
 		AD9D55C922D08112002FE8FE /* CountryInfoVC-Extension+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D55C822D08112002FE8FE /* CountryInfoVC-Extension+TableViewDataSource.swift */; };
 		AD9D55CB22D08182002FE8FE /* CountryInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D55CA22D08182002FE8FE /* CountryInfoCell.swift */; };
+		E584ABF2EECE3BCBEB69C103 /* Pods_Sandesh_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12FAC5F34F413F11010BBA1 /* Pods_Sandesh_AssignmentTests.framework */; };
+		F3661F552A569D516601BFAB /* Pods_Sandesh_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBA378E1F675669BA199505 /* Pods_Sandesh_Assignment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CC51D9E632E6A195C5A8797 /* Pods-Sandesh-AssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sandesh-AssignmentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sandesh-AssignmentUITests/Pods-Sandesh-AssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F9444CC98ED8BC77810FA68 /* Pods-Sandesh-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sandesh-Assignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sandesh-Assignment/Pods-Sandesh-Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		594EAC52A66715B98C623F5E /* Pods-Sandesh-AssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sandesh-AssignmentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sandesh-AssignmentUITests/Pods-Sandesh-AssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6566E79148321120D2CF2A76 /* Pods-Sandesh-AssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sandesh-AssignmentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sandesh-AssignmentTests/Pods-Sandesh-AssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		6DBA378E1F675669BA199505 /* Pods_Sandesh_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sandesh_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA1BAE3EF2F66BD5F45A483 /* Pods_Sandesh_AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sandesh_AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD08918D22D09759002B6463 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AD08918F22D098D9002B6463 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AD9D558522CFA4BB002FE8FE /* Sandesh-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sandesh-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +70,9 @@
 		AD9D55C622D080DD002FE8FE /* CountryInfoVC-Extension+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountryInfoVC-Extension+TableViewDelegate.swift"; sourceTree = "<group>"; };
 		AD9D55C822D08112002FE8FE /* CountryInfoVC-Extension+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CountryInfoVC-Extension+TableViewDataSource.swift"; sourceTree = "<group>"; };
 		AD9D55CA22D08182002FE8FE /* CountryInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfoCell.swift; sourceTree = "<group>"; };
+		B12FAC5F34F413F11010BBA1 /* Pods_Sandesh_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sandesh_AssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C06347C9CA7587F8D6191D25 /* Pods-Sandesh-AssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sandesh-AssignmentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sandesh-AssignmentTests/Pods-Sandesh-AssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F81AF5B6C1052492BDF07790 /* Pods-Sandesh-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sandesh-Assignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sandesh-Assignment/Pods-Sandesh-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3661F552A569D516601BFAB /* Pods_Sandesh_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E584ABF2EECE3BCBEB69C103 /* Pods_Sandesh_AssignmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,12 +96,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F2999899F781E3D53F578A /* Pods_Sandesh_AssignmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34B253468F3C2EBE4C35B7CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F81AF5B6C1052492BDF07790 /* Pods-Sandesh-Assignment.debug.xcconfig */,
+				3F9444CC98ED8BC77810FA68 /* Pods-Sandesh-Assignment.release.xcconfig */,
+				C06347C9CA7587F8D6191D25 /* Pods-Sandesh-AssignmentTests.debug.xcconfig */,
+				6566E79148321120D2CF2A76 /* Pods-Sandesh-AssignmentTests.release.xcconfig */,
+				1CC51D9E632E6A195C5A8797 /* Pods-Sandesh-AssignmentUITests.debug.xcconfig */,
+				594EAC52A66715B98C623F5E /* Pods-Sandesh-AssignmentUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		907D3B3BA9F580F6E49CEFBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DBA378E1F675669BA199505 /* Pods_Sandesh_Assignment.framework */,
+				B12FAC5F34F413F11010BBA1 /* Pods_Sandesh_AssignmentTests.framework */,
+				7EA1BAE3EF2F66BD5F45A483 /* Pods_Sandesh_AssignmentUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD9D557C22CFA4BB002FE8FE = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +133,8 @@
 				AD9D559C22CFA4BC002FE8FE /* Sandesh-AssignmentTests */,
 				AD9D55A722CFA4BD002FE8FE /* Sandesh-AssignmentUITests */,
 				AD9D558622CFA4BB002FE8FE /* Products */,
+				34B253468F3C2EBE4C35B7CD /* Pods */,
+				907D3B3BA9F580F6E49CEFBC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,9 +233,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD9D55AD22CFA4BD002FE8FE /* Build configuration list for PBXNativeTarget "Sandesh-Assignment" */;
 			buildPhases = (
+				6841D84240D52ED830B80A5F /* [CP] Check Pods Manifest.lock */,
 				AD9D558122CFA4BB002FE8FE /* Sources */,
 				AD9D558222CFA4BB002FE8FE /* Frameworks */,
 				AD9D558322CFA4BB002FE8FE /* Resources */,
+				9C45CA3251BEB67B3F5C2260 /* [CP] Embed Pods Frameworks */,
+				7649EFDD5BBF108587D65CA9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,9 +253,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD9D55B022CFA4BD002FE8FE /* Build configuration list for PBXNativeTarget "Sandesh-AssignmentTests" */;
 			buildPhases = (
+				CC94CAAB855DA1FACFB8B3C3 /* [CP] Check Pods Manifest.lock */,
 				AD9D559522CFA4BC002FE8FE /* Sources */,
 				AD9D559622CFA4BC002FE8FE /* Frameworks */,
 				AD9D559722CFA4BC002FE8FE /* Resources */,
+				235162A8D630767844415F97 /* [CP] Embed Pods Frameworks */,
+				4FE561BD19DF35351977AC69 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,9 +274,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD9D55B322CFA4BD002FE8FE /* Build configuration list for PBXNativeTarget "Sandesh-AssignmentUITests" */;
 			buildPhases = (
+				53A5FB3D95ADB9538053F8CF /* [CP] Check Pods Manifest.lock */,
 				AD9D55A022CFA4BD002FE8FE /* Sources */,
 				AD9D55A122CFA4BD002FE8FE /* Frameworks */,
 				AD9D55A222CFA4BD002FE8FE /* Resources */,
+				06798C48C49B39714BB5A49F /* [CP] Embed Pods Frameworks */,
+				05CAFA5C6CE556A34A580F1D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -311,6 +360,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05CAFA5C6CE556A34A580F1D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sandesh-AssignmentUITests/Pods-Sandesh-AssignmentUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		06798C48C49B39714BB5A49F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sandesh-AssignmentUITests/Pods-Sandesh-AssignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		235162A8D630767844415F97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sandesh-AssignmentTests/Pods-Sandesh-AssignmentTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FE561BD19DF35351977AC69 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sandesh-AssignmentTests/Pods-Sandesh-AssignmentTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53A5FB3D95ADB9538053F8CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sandesh-AssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6841D84240D52ED830B80A5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sandesh-Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7649EFDD5BBF108587D65CA9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sandesh-Assignment/Pods-Sandesh-Assignment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C45CA3251BEB67B3F5C2260 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sandesh-Assignment/Pods-Sandesh-Assignment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sandesh-Assignment/Pods-Sandesh-Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC94CAAB855DA1FACFB8B3C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sandesh-AssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD9D558122CFA4BB002FE8FE /* Sources */ = {
@@ -479,15 +678,13 @@
 		};
 		AD9D55AE22CFA4BD002FE8FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F81AF5B6C1052492BDF07790 /* Pods-Sandesh-Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69VU96BCPE;
 				INFOPLIST_FILE = "Sandesh-Assignment/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sss.Sandesh-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -497,15 +694,13 @@
 		};
 		AD9D55AF22CFA4BD002FE8FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F9444CC98ED8BC77810FA68 /* Pods-Sandesh-Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69VU96BCPE;
 				INFOPLIST_FILE = "Sandesh-Assignment/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sss.Sandesh-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -515,17 +710,14 @@
 		};
 		AD9D55B122CFA4BD002FE8FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C06347C9CA7587F8D6191D25 /* Pods-Sandesh-AssignmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69VU96BCPE;
 				INFOPLIST_FILE = "Sandesh-AssignmentTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sss.Sandesh-AssignmentTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -536,17 +728,14 @@
 		};
 		AD9D55B222CFA4BD002FE8FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6566E79148321120D2CF2A76 /* Pods-Sandesh-AssignmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69VU96BCPE;
 				INFOPLIST_FILE = "Sandesh-AssignmentTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sss.Sandesh-AssignmentTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -557,16 +746,13 @@
 		};
 		AD9D55B422CFA4BD002FE8FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CC51D9E632E6A195C5A8797 /* Pods-Sandesh-AssignmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69VU96BCPE;
 				INFOPLIST_FILE = "Sandesh-AssignmentUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sss.Sandesh-AssignmentUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -577,16 +763,13 @@
 		};
 		AD9D55B522CFA4BD002FE8FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 594EAC52A66715B98C623F5E /* Pods-Sandesh-AssignmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69VU96BCPE;
 				INFOPLIST_FILE = "Sandesh-AssignmentUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "sss.Sandesh-AssignmentUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -1,0 +1,6 @@
+framework module Pods_Sandesh_AssignmentUITests {
+  umbrella header "Pods-Sandesh-AssignmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
