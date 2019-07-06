@@ -8,6 +8,7 @@ target 'Sandesh-Assignment' do
   # Pods for Sandesh-Assignment
   pod 'Alamofire'
   pod 'SwiftLint'
+  pod ‘SnapKit’
 
   target 'Sandesh-AssignmentTests' do
     inherit! :search_paths
