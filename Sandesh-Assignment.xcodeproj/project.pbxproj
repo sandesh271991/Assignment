@@ -10,6 +10,7 @@
 		A8F2999899F781E3D53F578A /* Pods_Sandesh_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA1BAE3EF2F66BD5F45A483 /* Pods_Sandesh_AssignmentUITests.framework */; };
 		AD08918E22D09759002B6463 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AD08918D22D09759002B6463 /* .gitignore */; };
 		AD08919022D098D9002B6463 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD08918F22D098D9002B6463 /* README.md */; };
+		AD3DC21022D0FD7A00C1DD33 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3DC20F22D0FD7A00C1DD33 /* Webservice.swift */; };
 		AD9D558922CFA4BB002FE8FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D558822CFA4BB002FE8FE /* AppDelegate.swift */; };
 		AD9D559022CFA4BC002FE8FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9D558F22CFA4BC002FE8FE /* Assets.xcassets */; };
 		AD9D559E22CFA4BC002FE8FE /* Sandesh_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9D559D22CFA4BC002FE8FE /* Sandesh_AssignmentTests.swift */; };
@@ -52,6 +53,7 @@
 		7EA1BAE3EF2F66BD5F45A483 /* Pods_Sandesh_AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sandesh_AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD08918D22D09759002B6463 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AD08918F22D098D9002B6463 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AD3DC20F22D0FD7A00C1DD33 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		AD9D558522CFA4BB002FE8FE /* Sandesh-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sandesh-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9D558822CFA4BB002FE8FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD9D558F22CFA4BC002FE8FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 		AD9D55BA22CFA95E002FE8FE /* Webservice */ = {
 			isa = PBXGroup;
 			children = (
+				AD3DC20F22D0FD7A00C1DD33 /* Webservice.swift */,
 			);
 			path = Webservice;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				AD9D558322CFA4BB002FE8FE /* Resources */,
 				9C45CA3251BEB67B3F5C2260 /* [CP] Embed Pods Frameworks */,
 				7649EFDD5BBF108587D65CA9 /* [CP] Copy Pods Resources */,
+				AD3DC21122D1AB8700C1DD33 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -481,17 +485,40 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Sandesh-Assignment/Pods-Sandesh-Assignment-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sandesh-Assignment/Pods-Sandesh-Assignment-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		AD3DC21122D1AB8700C1DD33 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 		CC94CAAB855DA1FACFB8B3C3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -526,6 +553,7 @@
 				AD9D55C522D07FDD002FE8FE /* CountryInfoViewController.swift in Sources */,
 				AD9D55BD22CFAD53002FE8FE /* CountryInfoDataModel.swift in Sources */,
 				AD9D55C722D080DD002FE8FE /* CountryInfoVC-Extension+TableViewDelegate.swift in Sources */,
+				AD3DC21022D0FD7A00C1DD33 /* Webservice.swift in Sources */,
 				AD9D55C122CFC338002FE8FE /* CountryViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -686,7 +714,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69VU96BCPE;
 				INFOPLIST_FILE = "Sandesh-Assignment/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "sss.Sandesh-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -702,7 +733,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69VU96BCPE;
 				INFOPLIST_FILE = "Sandesh-Assignment/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "sss.Sandesh-Assignment";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -719,7 +753,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69VU96BCPE;
 				INFOPLIST_FILE = "Sandesh-AssignmentTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "sss.Sandesh-AssignmentTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -737,7 +775,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69VU96BCPE;
 				INFOPLIST_FILE = "Sandesh-AssignmentTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "sss.Sandesh-AssignmentTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -754,7 +796,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69VU96BCPE;
 				INFOPLIST_FILE = "Sandesh-AssignmentUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "sss.Sandesh-AssignmentUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -771,7 +817,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 69VU96BCPE;
 				INFOPLIST_FILE = "Sandesh-AssignmentUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "sss.Sandesh-AssignmentUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -16,8 +16,14 @@ class CountryInfoViewModel: NSObject {
         return countryInfoData?.title ?? "No Title"
     }
     
-    var desctiptionText: String {
-        return countryInfoData?.description ?? "No Description"
+    var desctiptionText: NSAttributedString {
+        
+        let descriptionString = countryInfoData?.description ?? "No Description"
+        let attributes: [NSAttributedString.Key: Any] = [ .font: UIFont.systemFont(ofSize: 18.0), .foregroundColor: UIColor.black]
+        
+        let descriptionAttributedString =  NSMutableAttributedString.init(string: descriptionString, attributes: attributes)
+        
+        return descriptionAttributedString
     }
     
     var imageHrefUrl: URL? {

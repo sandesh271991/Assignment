@@ -1,18 +1,31 @@
 PODS:
   - Alamofire (4.8.2)
+  - FLAnimatedImage (1.0.12)
+  - PINCache (2.3)
+  - PINRemoteImage (2.1.4):
+    - PINRemoteImage/FLAnimatedImage (= 2.1.4)
+  - PINRemoteImage/Core (2.1.4):
+    - PINCache (>= 2.1)
+  - PINRemoteImage/FLAnimatedImage (2.1.4):
+    - FLAnimatedImage (>= 1.0)
+    - PINRemoteImage/Core
   - SnapKit (5.0.0)
   - SwiftLint (0.32.0)
 
 DEPENDENCIES:
   - Alamofire
+  - PINRemoteImage
   - SnapKit
   - SwiftLint
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  PINCache: ce36ed282031b92fc7733ffe831f474ff80fddc2
+  PINRemoteImage: 4ac4011c5caefd6befd99758e09becede05d3226
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
 
-PODFILE CHECKSUM: bc885c6d07aa61bc8f59b7f12b3c1e8d1285d544
+PODFILE CHECKSUM: c26f1a6ddd00b17e46a2c781cdfc22d41f7d1d42
 
 COCOAPODS: 1.4.0

@@ -11,5 +11,10 @@ import Foundation
 struct CountryDataModel: Codable {
     var title: String?
     var info: [CountryInfoDataModel]?
+    
+    enum CodingKeys: String, CodingKey {
+        case title
+        case info = "rows"
+    }
 }
 

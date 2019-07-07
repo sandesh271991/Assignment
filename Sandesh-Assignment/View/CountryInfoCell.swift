@@ -15,6 +15,20 @@ class CountryInfoCell: UITableViewCell {
     var lblDescription: UILabel!
     var imgRefrenceView: UIImageView!
     
+    var countryInfoViewModel: CountryInfoViewModel? {
+        didSet {
+            lblTitle.text = countryInfoViewModel?.titleText
+            lblDescription.attributedText = countryInfoViewModel?.desctiptionText
+            imgRefrenceView.pin_updateWithProgress = true
+            //imgRefrenceView.pin_setPlaceholder(with: UIImage.init(named: placeholderImage))
+            if let url = countryInfoViewModel?.imageHrefUrl {
+                imgRefrenceView.pin_setImage(from: url, completion: { (result) in
+                    self.layoutIfNeeded()
+                })
+            }
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -39,7 +53,6 @@ class CountryInfoCell: UITableViewCell {
         lblTitle.clipsToBounds = true
         lblTitle.numberOfLines = 0
          lblTitle.backgroundColor = .orange
-        lblTitle.text = "sandesh"
         contentBackgroundView.addSubview(lblTitle)
         
         imgRefrenceView = UIImageView.init(frame: .zero)
@@ -53,8 +66,7 @@ class CountryInfoCell: UITableViewCell {
         lblDescription = UILabel(frame: .zero)
         lblDescription.clipsToBounds = true
         lblDescription.numberOfLines = 0
-         lblDescription.backgroundColor = .purple
-        lblDescription.text = "sardar"
+        lblDescription.backgroundColor = .purple
         contentBackgroundView.addSubview(lblDescription)
         
         self.setupLayout()
@@ -75,13 +87,13 @@ class CountryInfoCell: UITableViewCell {
         lblDescription?.snp.makeConstraints { (make) -> Void in
             make.left.equalTo(lblTitle)
             make.right.equalTo(lblTitle)
-            make.bottom.equalTo(lblTitle).offset(20)
+            make.topMargin.equalTo(lblTitle).offset(20)
         }
     
-        lblDescription?.snp.makeConstraints { (make) -> Void in
-            make.left.equalTo(contentView).offset(5)
-            make.centerX.equalTo(contentView)
-        }
+//        imgRefrenceView?.snp.makeConstraints { (make) -> Void in
+//            make.left.equalTo(contentView).offset(5)
+//            make.centerX.equalTo(contentView)
+//        }
         
     }
 }

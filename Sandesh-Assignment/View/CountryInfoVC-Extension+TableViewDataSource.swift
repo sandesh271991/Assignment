@@ -9,15 +9,28 @@
 import UIKit
 
 extension CountryInfoViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return countryViewModel?.info.count ?? 0
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var countryInfoCell: CountryInfoCell? = tableView.dequeueReusableCell(withIdentifier: "CountryInfoCellID", for: indexPath) as! CountryInfoCell
+        var countryInfoCell: CountryInfoCell? = tableView.dequeueReusableCell(withIdentifier: "CountryInfoCellID", for: indexPath) as? CountryInfoCell
         
- 
+        if countryInfoCell == nil {
+            countryInfoCell = CountryInfoCell.init(style: .default, reuseIdentifier: "CountryInfoCellID")
+        }
+        
+
+        countryInfoCell?.countryInfoViewModel = CountryInfoViewModel.init(countryInfoData: (countryViewModel?.info[indexPath.section])!)
+        
+        countryInfoCell?.layoutIfNeeded()
+        countryInfoCell?.layoutSubviews()
         return countryInfoCell!
     }
 }

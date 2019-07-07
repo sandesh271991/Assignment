@@ -14,7 +14,7 @@ struct CountryInfoDataModel: Codable {
     var imageHref: String?
     enum CodingKeys: String, CodingKey {
         case title
-        case description = "description"
+        case description
         case imageHref
     }
 }
