@@ -18,4 +18,3 @@ struct CountryInfoDataModel: Codable {
         case imageHref
     }
 }
-

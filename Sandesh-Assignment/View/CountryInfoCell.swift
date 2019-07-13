@@ -20,7 +20,7 @@ class CountryInfoCell: UITableViewCell {
             lblTitle.text = countryInfoViewModel?.titleText
             lblDescription.attributedText = countryInfoViewModel?.desctiptionText
             imgRefrenceView.pin_updateWithProgress = true
-            //imgRefrenceView.pin_setPlaceholder(with: UIImage.init(named: placeholderImage))
+            imgRefrenceView.pin_setPlaceholder(with: UIImage.init(named: "PlaceholderImg"))
             if let url = countryInfoViewModel?.imageHrefUrl {
                 imgRefrenceView.pin_setImage(from: url, completion: { (result) in
                     self.layoutIfNeeded()
@@ -44,7 +44,6 @@ class CountryInfoCell: UITableViewCell {
     
     func setupView() {
         contentBackgroundView = UIView.init(frame: .zero)
-        contentBackgroundView.backgroundColor = .red
         contentView.addSubview(contentBackgroundView)
         
         lblTitle = UILabel(frame: .zero)
@@ -52,21 +51,17 @@ class CountryInfoCell: UITableViewCell {
         lblTitle.textColor = .black
         lblTitle.clipsToBounds = true
         lblTitle.numberOfLines = 0
-         lblTitle.backgroundColor = .orange
         contentBackgroundView.addSubview(lblTitle)
         
         imgRefrenceView = UIImageView.init(frame: .zero)
         imgRefrenceView.clipsToBounds = true
-        imgRefrenceView.contentMode = .scaleAspectFill
-        imgRefrenceView.frame = CGRect(x: 0, y: 0, width: 10, height: 10)
-        imgRefrenceView.backgroundColor = .yellow
-        //imgRefrenceView?.image = UIImage.init(named: placeholderImage)
+        imgRefrenceView.contentMode = .scaleAspectFit
+        imgRefrenceView?.image = UIImage.init(named: "PlaceholderImg")
         contentBackgroundView.addSubview(imgRefrenceView)
         
         lblDescription = UILabel(frame: .zero)
         lblDescription.clipsToBounds = true
         lblDescription.numberOfLines = 0
-        lblDescription.backgroundColor = .purple
         contentBackgroundView.addSubview(lblDescription)
         
         self.setupLayout()
@@ -75,25 +70,26 @@ class CountryInfoCell: UITableViewCell {
     func setupLayout() {
         
         contentBackgroundView?.snp.makeConstraints { (make) -> Void in
-            make.edges.equalTo(contentView);
+            make.edges.equalTo(contentView)
         }
-        
+
         lblTitle?.snp.makeConstraints { (make) -> Void in
-            make.left.equalTo(contentView).offset(20)
-            make.right.equalTo(contentView).offset(-20)
-            make.top.equalTo(contentView).offset(0)
+            make.left.equalTo(contentBackgroundView).offset(0)
+            make.right.equalTo(contentBackgroundView).offset(0)
+            make.top.equalTo(contentBackgroundView).offset(5)
         }
         
+        imgRefrenceView?.snp.makeConstraints { (make) -> Void in
+            make.left.equalTo(lblTitle)
+            make.right.equalTo(lblTitle)
+            make.top.equalTo(lblTitle.snp.bottom).offset(10)
+        }
+
         lblDescription?.snp.makeConstraints { (make) -> Void in
             make.left.equalTo(lblTitle)
             make.right.equalTo(lblTitle)
-            make.topMargin.equalTo(lblTitle).offset(20)
+            make.top.equalTo(imgRefrenceView.snp.bottom).offset(10)
+            make.bottom.equalTo(contentBackgroundView).offset(-10)
         }
-    
-//        imgRefrenceView?.snp.makeConstraints { (make) -> Void in
-//            make.left.equalTo(contentView).offset(5)
-//            make.centerX.equalTo(contentView)
-//        }
-        
     }
 }

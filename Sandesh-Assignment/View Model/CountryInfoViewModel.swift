@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 class CountryInfoViewModel: NSObject {
-    var countryInfoData:CountryInfoDataModel?
+    var countryInfoData: CountryInfoDataModel?
     
-    var titleText:String {
+    var titleText: String {
         return countryInfoData?.title ?? "No Title"
     }
     
@@ -35,7 +35,7 @@ class CountryInfoViewModel: NSObject {
         }
         return nil
     }
-    
+
     init(countryInfoData: CountryInfoDataModel) {
         self.countryInfoData = countryInfoData
     }

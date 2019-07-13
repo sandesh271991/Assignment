@@ -13,7 +13,7 @@ class Webservice: NSObject {
     
     static let shared = Webservice()
     
-    func getData(with url: String, completion:@escaping (_ data: CountryDataModel?, _ error: Error?)-> Void) {
+    func getData(with url: String, completion:@escaping (_ data: CountryDataModel?, _ error: Error?) -> Void) {
         
         Alamofire.request(url).responseData { (responseData) in
             switch responseData.result {
@@ -37,6 +37,3 @@ class Webservice: NSObject {
         }
     }
 }
-
-
-

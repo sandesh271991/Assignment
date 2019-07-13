@@ -20,13 +20,12 @@ extension CountryInfoViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var countryInfoCell: CountryInfoCell? = tableView.dequeueReusableCell(withIdentifier: "CountryInfoCellID", for: indexPath) as? CountryInfoCell
+        var countryInfoCell: CountryInfoCell? = tableView.dequeueReusableCell(withIdentifier: countryInfoCellId, for: indexPath) as? CountryInfoCell
         
         if countryInfoCell == nil {
-            countryInfoCell = CountryInfoCell.init(style: .default, reuseIdentifier: "CountryInfoCellID")
+            countryInfoCell = CountryInfoCell.init(style: .default, reuseIdentifier: countryInfoCellId)
         }
         
-
         countryInfoCell?.countryInfoViewModel = CountryInfoViewModel.init(countryInfoData: (countryViewModel?.info[indexPath.section])!)
         
         countryInfoCell?.layoutIfNeeded()

@@ -17,4 +17,3 @@ struct CountryDataModel: Codable {
         case info = "rows"
     }
 }
-

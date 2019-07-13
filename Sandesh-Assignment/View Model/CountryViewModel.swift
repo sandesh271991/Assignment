@@ -10,9 +10,9 @@ import Foundation
 import UIKit
 
 class CountryViewModel: NSObject {
-    var countryData:CountryDataModel?
+    var countryData: CountryDataModel?
     
-    var title:String {
+    var title: String {
         return countryData?.title ?? "No Title"
     }
     

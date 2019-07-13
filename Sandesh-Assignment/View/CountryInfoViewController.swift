@@ -10,13 +10,16 @@ import Foundation
 import UIKit
 import SnapKit
 import PINRemoteImage
+import Alamofire
 
 
-class CountryInfoViewController:UIViewController {
+class CountryInfoViewController: UIViewController {
     
     var tableView: UITableView?
+    var refreshControl: UIRefreshControl?
+
     var countryViewModel: CountryViewModel?
-    var countryData:CountryDataModel? {
+    var countryData: CountryDataModel? {
         
         didSet {
             guard let countryData = countryData else { return }
@@ -26,9 +29,7 @@ class CountryInfoViewController:UIViewController {
                 }
             }
     }
-    
-    
-    
+        
     init() {
         super.init(nibName: nil, bundle: nil)
         self.setupViews()
@@ -40,6 +41,7 @@ class CountryInfoViewController:UIViewController {
     
     //View LifeCycle
     override func viewWillAppear(_ animated: Bool) {
+    
         self.fetchData()
         tableView?.rowHeight = UITableView.automaticDimension
         tableView?.estimatedRowHeight = 65.0
@@ -59,6 +61,13 @@ class CountryInfoViewController:UIViewController {
         tableView?.estimatedRowHeight = 44.0
         
         tableView?.register(CountryInfoCell.self, forCellReuseIdentifier: "CountryInfoCellID")
+        tableView?.accessibilityIdentifier = "table--countryInfoTableView"
+
+        //Add refresh control for pull to refresh purpose
+        self.refreshControl = UIRefreshControl.init()
+        self.refreshControl?.addTarget(self, action: #selector(CountryInfoViewController.fetchData), for: .valueChanged)
+        self.tableView?.addSubview(refreshControl!)
+        self.tableView?.allowsSelection = false
         
         setupLayout()
     }
@@ -70,18 +79,24 @@ class CountryInfoViewController:UIViewController {
     }
 
     @objc func fetchData() {
-        Webservice.shared.getData(with: "https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json") { (countryData, error) in
-            if error != nil {
-                return
+        if isConnectedToInternet() == true {
+            Webservice.shared.getData(with: webserviceURL) { (countryData, error) in
+                self.refreshControl?.endRefreshing()
+                if error != nil {
+                    return
+                }
+                guard let countryData = countryData else {return}
+                self.countryData = countryData
             }
-            guard let countryData = countryData else {return}
-            self.countryData = countryData
+        }
+        else {
+            showAlert(title: "No Internet Connection", message: "Please check your internet connection")
         }
     }
+    
     
     func updateView() {
         self.title = self.countryViewModel?.title
         self.tableView?.reloadData()
     }
-
 }
