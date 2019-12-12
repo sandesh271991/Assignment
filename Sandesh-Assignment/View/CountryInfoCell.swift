@@ -22,7 +22,7 @@ class CountryInfoCell: UITableViewCell {
             imgRefrenceView.pin_updateWithProgress = true
             imgRefrenceView.pin_setPlaceholder(with: UIImage.init(named: "PlaceholderImg"))
             if let url = countryInfoViewModel?.imageHrefUrl {
-                imgRefrenceView.pin_setImage(from: url, completion: { (result) in
+                imgRefrenceView.pin_setImage(from: url, completion: { (_) in
                     self.layoutIfNeeded()
                 })
             }

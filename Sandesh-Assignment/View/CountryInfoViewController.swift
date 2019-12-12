@@ -12,7 +12,6 @@ import SnapKit
 import PINRemoteImage
 import Alamofire
 
-
 class CountryInfoViewController: UIViewController {
     
     var tableView: UITableView?
@@ -88,12 +87,10 @@ class CountryInfoViewController: UIViewController {
                 guard let countryData = countryData else {return}
                 self.countryData = countryData
             }
-        }
-        else {
+        } else {
             showAlert(title: "No Internet Connection", message: "Please check your internet connection")
         }
     }
-    
     
     func updateView() {
         self.title = self.countryViewModel?.title
